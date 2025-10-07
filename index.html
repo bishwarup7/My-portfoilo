@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bishwarup Biswas | Portfolio</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="navbar fixed top-0 w-full z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      
+      <!-- Logo -->
+      <a href="#" class="logo text-2xl font-bold text-blue-600 flex items-center gap-2">
+        <img src="c:\Users\HP\Downloads\Copilot_20251007_204153.png" alt="Logo" class="w-8 h-8 rounded-full">
+        Bishwarup
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links hidden md:flex space-x-6 font-medium">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Download CV Button -->
+      <a href="resume.pdf" class="cv-btn hidden md:inline-block">Download CV</a>
+
+      <!-- Hamburger Menu (Mobile) -->
+      <button id="menu-btn" class="md:hidden flex items-center px-3 py-2 border rounded text-gray-700 border-gray-600">
+        <svg class="fill-current h-5 w-5" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-white/95 backdrop-blur-lg px-6 py-4 space-y-3">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.pdf" class="cv-btn-mobile">Download CV</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center">
+    <div data-aos="fade-up">
+      <h1 class="text-5xl font-bold mb-4">Hi, I’m Bishwarup Biswas 👋</h1>
+      <p class="text-xl mb-6">Full Stack Developer | Tech Enthusiast</p>
+      <a href="#projects" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-200">See My Work</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-20 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-down">About Me</h2>
+    <p class="text-center max-w-2xl mx-auto text-lg" data-aos="fade-up">
+      I’m a Computer Science student passionate about building modern web apps, exploring AI and Cybersecurity.
+      I love solving real-world problems with code and constantly learning new technologies.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <h4>HTML & Accessibility</h4>
+          <div class="meter"><i style="width:65%"></i></div>
+          <small>Semantic, ARIA, SEO-minded</small>
+        </div>
+        <div class="skill">
+          <h4>CSS & Animation</h4>
+          <div class="meter"><i style="width:63%"></i></div>
+          <small>Responsive, modern layouts</small>
+        </div>
+        <div class="skill">
+          <h4>JavaScript & React</h4>
+          <div class="meter"><i style="width:40%"></i></div>
+          <small>Component-driven UIs</small>
+        </div>
+        <div class="skill">
+          <h4>Python</h4>
+          <div class="meter"><i style="width:45%"></i></div>
+          <small>Automation, scripts & tools</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Projects</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition" data-aos="flip-left">
+        <img src="c:\Users\HP\OneDrive\Desktop\javascript learn\portfoilo\Hospital-Management-System.webp" alt="Project Screenshot" class="w-full">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Hospital Management System</h3>
+          <p class="mb-4 text-gray-600">A web application for managing hospital operations, including patient records, appointments, and billing.</p>
+          <a href="https://github.com/bishwarup7/hospital_management_system" class="text-blue-600 font-semibold hover:underline">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Contact Me</h2>
+      <p class="mb-6">Interested in working together? Let’s connect!</p>
+      <p>Email: <a href="mailto:bishwarup.biswas@example.com" class="text-blue-600">bishwarup.biswas@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/bishwarup7" class="text-blue-600">github.com/bishwarup7</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/bishwarupbiswas/" class="text-blue-600">//www.linkedin.com/in/bishwarupbiswas/</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow py-6 text-center">
+    <p>&copy; 2025 Bishwarup Biswas. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
